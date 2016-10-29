@@ -89,25 +89,26 @@ puts "Endurance: #{eur}"
 
 sleep 3
 system "clear"
-print "You awake in the middle of a pitch black room with nothing accept you some matches and your clothes. What do you do?"
+puts "You awake in the middle of a pitch black room with nothing accept you some matches and your clothes. What do you do?"
 if 4 < int.to_i
-	puts "(A) Do you wait for five minutes to attempt to get used to the dark, (B) do you go to sleep, (C) or light a match?"
+	puts "(A) Do you wait for five minutes to attempt to get used to the dark,"
+	puts "(B) Do you go to sleep?" 
+	puts "(C) Light a match?"
 	choice_one = gets.chomp
 	if choice_one == "A"
 		print "You find that you are now able to see clearly in the darkness. You see a door that appears to be made of wood, but it is hard to tell how thick it is."
 	elsif choice_one == "B"
-		Print "You wake after what feels to be merely only seconds but the view is devestating. You find that you are in the same room, but it is different... it looks thousands of years older yet you feel just as young as you were."
+		print "You wake after what feels to be merely only seconds but the view is devestating. You find that you are in the same room, but it is different... it looks thousands of years older yet you feel just as young as you were."
 	elsif choice_one
 		print "You find an open door."
 	end
 else
-	puts "(A) Do you wait for five minutes to attempt to get used to the dark, (B)or do you go to sleep?"
+	puts "(A) Do you wait for five minutes to attempt to get used to the dark." 
+	puts "(B)or do you go to sleep?"
 	choice_one = gets.chomp
 	if choice_one == "A"
 		print "You find that you are now able to see clearly in the darkness. You see a door that appears to be made of wood, but it is hard to tell how thick it is."
 	elsif choice_one == "B"
-		Print "You wake after what feels to be merely only seconds but the view is devestating. You find that you are in the same room, but it is different... it looks thousands of years older yet you feel just as young as you were."
+		print "You wake after what feels to be merely only seconds but the view is devestating. You find that you are in the same room, but it is different... it looks thousands of years older yet you feel just as young as you were."
 end
 end
-
-
